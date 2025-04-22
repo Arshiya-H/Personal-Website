@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
   line-height: 1.6;
   background: #f9f9f9;
-  color: #333;
+  color: #333333;
   scroll-behavior: smooth;
 }
 
@@ -94,11 +94,6 @@ body {
   }
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 2rem;
-}
 
 
 
@@ -109,16 +104,16 @@ main {
   padding: 0 1rem;
 }
 
-
-
-section {
-  margin-bottom: 4rem;
+div#about {
+  width: 100%;
+  background-color: #7e7c7c
 }
+
 
 section#about {
   max-width: 980px;
-  margin: 2rem auto;
-  padding: 0 2rem;
+  margin: 0rem auto;
+  padding: 2rem 2rem;
 }
 
 h2 {
@@ -164,7 +159,7 @@ footer {
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
+  
 }
 
 .title {
