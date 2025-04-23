@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
   line-height: 1.6;
   background: #f9f9f9;
-  color: #333333;
+  color: #ffffff;
   scroll-behavior: smooth;
 }
 
@@ -29,6 +29,7 @@ body {
 .logo {
   font-weight: bold;
   font-size: 1.2rem;
+  color: #23252f;
 }
 
 .nav-links {
@@ -105,12 +106,17 @@ main {
 
 div#about {
   width: 100%;
-  background-color: #7e7c7c
+  background-color: #272935
 }
 
 div#projects {
   width: 100%;
-  background-color: #424040
+  background-color: #23252f
+}
+
+div#resume {
+  width: 100%;
+  background-color: #272935
 }
 
 
@@ -122,7 +128,7 @@ h2 {
 footer {
   text-align: center;
   padding: 2rem;
-  color: #888;
+  color: #0066cc;
   font-size: 0.9rem;
 }
 
@@ -156,6 +162,7 @@ section#about {
 
 .about-left {
   text-align: center;
+  color: #ffffff;
 }
 
 .profile-pic {
@@ -168,17 +175,17 @@ section#about {
 
 .title {
   font-weight: bold;
-  color: #444;
+  color: #98a6ad;
 }
 
 .affiliation {
   font-size: 0.9rem;
-  color: #666;
   margin-bottom: 1rem;
+  color: #98a6ad;
 }
 
 .social-links a {
-  color: #666;
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -190,7 +197,13 @@ section#about {
 
 .about-right p {
   margin-bottom: 1.2rem;
+  font-size: 1.1rem;
 }
+
+.about-right h1 {
+  color: #98a6ad;
+}
+
 
 /* Responsive: stack on smaller screens */
 @media (max-width: 768px) {
@@ -207,13 +220,13 @@ section#about {
 /* Project section grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  margin: 3rem 0rem 8rem 0rem;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 3rem;
+  margin: 3rem 0rem 6rem 0rem;
 }
 
 section#projects {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   padding: 2rem 2rem;
 }
@@ -231,7 +244,7 @@ section#projects {
 }
 
 .project-title {
-  font-size: 1.1rem;
+  font-size: 2.1rem;
   font-weight: bold;
   color: #0066cc;
   text-decoration: none;
@@ -251,7 +264,7 @@ section#projects {
 }
 
 .project-summary {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: #444;
 }
 
@@ -266,4 +279,74 @@ section#projects {
   .project-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Timeline styling */
+
+section#resume {
+  max-width: 980px;
+  margin: auto;
+  padding: 2rem 2rem;
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  margin: 2rem auto;
+  padding: 2rem 0;
+  width: 90%;
+  max-width: 600px;
+  border-left: 3px solid #0066cc;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: -0.6rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: #0066cc;
+  border-radius: 50%;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #003366;
+}
+
+.timeline-content p {
+  margin: 0.3rem 0 0;
+  color: #555;
+}
+
+.timeline-card {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-4px);
+}
+
+.timeline-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.timeline-card a:hover {
+  text-decoration: underline;
 }
